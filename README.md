@@ -12,6 +12,6 @@ A tool for managing and modifying GTA SA audio archives with both **PC** and **P
 - [ ] update bank slots after making changes to a SFX archive if needed.
 - [x] improve the CLI interface and improve UX.
 - [ ] in the end **MAYBE** write a gui.
-- [ ] enable github action, for building the doc.
+- [x] enable github action, for building the doc.
 - [ ] better readme.
 - [ ] You tell me!
