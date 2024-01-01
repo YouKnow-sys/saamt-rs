@@ -1,6 +1,7 @@
 # GTA SA Audio Modding ToolKit
 [![Build Status](https://github.com/YouKnow-sys/saamt-rs/actions/workflows/rust.yml/badge.svg)](https://github.com/YouKnow-sys/saamt-rs/actions?workflow=Rust%20CI)
 [![unsafe forbidden](https://img.shields.io/badge/unsafe-forbidden-success.svg)](https://github.com/rust-secure-code/safety-dance/)
+[![MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/YouKnow-sys/saamt-rs/blob/master/LICENSE)
 
 A tool for managing and modifying GTA SA audio archives with both **PC** and **PS2** in mind, its still on early steps and there is a lot to do and improve. but it works! you can export and create SFX archives and so much more...
 
