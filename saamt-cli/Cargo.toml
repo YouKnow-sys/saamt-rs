@@ -1,0 +1,19 @@
+[package]
+name = "saamt-cli"
+version = "0.1.4"
+authors.workspace = true
+edition.workspace = true
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.4", features = ["derive"] }
+saamt-core = { path = "../saamt-core", default-features = false }
+serde_json = { version = "1.0", optional = true }
+
+[features]
+default = ["ps2-export-mfaudio", "ps2", "pc", "wav", "serde"]
+ps2-export-mfaudio = ["saamt-core/ps2-export-mfaudio"] # support for using MFAudio in export mode, super slow and windows only, but more feature complete.
+wav = ["saamt-core/wav"] # if this feature is enable you can export some sounds as wav
+ps2 = ["saamt-core/ps2"]
+pc = ["saamt-core/pc"]
+serde = ["saamt-core/serde", "dep:serde_json"]

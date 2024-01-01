@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+package.authors = ["Gameside <s.gamesides@gmail.com>"]
+package.edition = "2021"
+
+members = [
+  "saamt-core",
+  "saamt-cli",
+]
+
+[profile.release]
+# debug = 1 # only when we want to debug the code in release mode.
+codegen-units = 1
+lto = "fat"
+opt-level = "s"
+strip = "symbols"

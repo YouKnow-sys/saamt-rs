@@ -1,0 +1,19 @@
+[package]
+name = "saamt-core"
+version = "0.1.4"
+authors.workspace = true
+edition.workspace = true
+
+[dependencies]
+binrw = "0.13"
+hound = { version = "3.5", optional = true }
+serde = { version = "1.0.193", features = ["derive"], optional = true }
+thiserror = "1.0"
+walkdir = "2.4"
+
+[features]
+default = ["ps2", "pc", "wav", "ps2-export-mfaudio", "serde"]
+ps2-export-mfaudio = [] # support for using MFAudio in export mode, super slow and windows only, but more feature complete.
+wav = ["dep:hound"] # if this feature is enable you can export some sounds as wav
+ps2 = []
+pc = ["wav"]
